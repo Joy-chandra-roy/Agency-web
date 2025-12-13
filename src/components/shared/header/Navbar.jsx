@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router";
+import NavItems from "./NavItems";
 
 
 const Navbar = () => {
@@ -28,38 +29,7 @@ const Navbar = () => {
             tabIndex="-1"
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
-            <li>
-            <NavLink to='/'>Home</NavLink>
-          </li>
-          <li>
-            <NavLink to='/about'>About</NavLink>
-          </li>
-          <li>
-            <NavLink to='/service'>Services</NavLink>
-          </li>
-          <li>
-            <details>
-              <summary>Categories</summary>
-              <ul className="p-2 bg-base-100 w-40 z-1">
-                <li>
-                  <NavLink to='/'>Web development</NavLink>
-                </li>
-                <li>
-                  <NavLink to='/'>Software development</NavLink>
-                </li>
-                <li>
-                  <NavLink to='/'>Gigital marketing</NavLink>
-                </li>
-                
-              </ul>
-            </details>
-          </li>
-          <li>
-            <NavLink to="/blog">Blog</NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact">Contact</NavLink>
-          </li>
+            <NavItems/>
           </ul>
         </div>
         <NavLink to='/' className="text-xl font-bold flex items-center gap-2">
@@ -68,45 +38,14 @@ const Navbar = () => {
         </NavLink>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <NavLink to='/'>Home</NavLink>
-          </li>
-          <li>
-            <NavLink to='/about'>About</NavLink>
-          </li>
-          <li>
-            <NavLink to='/service'>Services</NavLink>
-          </li>
-          <li>
-            <details>
-              <summary>Categories</summary>
-              <ul className="p-2 bg-base-100 w-40 z-1">
-                <li>
-                  <NavLink to='/'>Web development</NavLink>
-                </li>
-                <li>
-                  <NavLink to='/'>Software development</NavLink>
-                </li>
-                <li>
-                  <NavLink to='/'>Gigital marketing</NavLink>
-                </li>
-                
-              </ul>
-            </details>
-          </li>
-          <li>
-            <NavLink to="/blog">Blog</NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact">Contact</NavLink>
-          </li>
+        <ul className="menu menu-horizontal px-1 ">
+          <NavItems/>
         </ul>
       </div>
       <div className="navbar-end gap-3">
         <NavLink to='/' className="btn btn-outline btn-primary px-8 hidden sm:flex">Login</NavLink>
 
-        <NavLink to='/' className="btn btn-primary px-8 hidden sm:flex">Free trial</NavLink>
+        <NavLink to='/' className="btn btn-primary  ">Free trial</NavLink>
       </div>
     </div>
   );
