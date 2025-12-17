@@ -10,8 +10,8 @@ const Hero = () => {
   const openModal = () => setShowModal(true);
   const closeModal = () => setShowModal(false);
   return (
-    <div className="bg-colorBg">
-      <div className="max-w-screen-2xl container mx-auto px-5 py-20 flex flex-col lg:flex-row justify-between items-center">
+    <div className="bg-colorBg ">
+      <div className="section-container flex flex-col lg:flex-row justify-between items-center ">
         {/* left side content */}
         <div className="space-y-5 text-center lg:text-start">
           <h1 className="text-4xl font-bold">
@@ -32,7 +32,7 @@ const Hero = () => {
         </div>
 
         {/* right side video */}
-        <div className="lg:w-1/2 mt-10 lg:mt-0 flex justify-end relative">
+        <div className="lg:w-1/2 mt-10 lg:mt-0 flex justify-end relative z-50">
           <div className="relative group">
             <img
               src={banner}
@@ -50,9 +50,9 @@ const Hero = () => {
 
         {/* modal */}
         {showModal && (
-          <div className="fixed inset-0 flex items-center justify-center bg-black opacity-50 z-50">
+          <div className="fixed inset-0 flex items-center justify-center bg-black opacity-50 ">
             <div className="bg-white p-5 rounded-lg shadow-lg max-w-xl w-full relative">
-              <button className="absolute top-3 right-3 text-white text-lg hover:text-white bg-black px-2 rounded-full" onClick={closeModal}>
+              <button className="absolute top-3 right-3 text-white text-lg hover:text-white bg-black px-2 rounded-full cursor-pointer" onClick={closeModal}>
                 &times;
               </button>
 

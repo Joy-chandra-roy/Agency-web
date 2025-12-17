@@ -10,3 +10,8 @@
     --font-roboto:"Roboto", sans-serif;
 
 }
+
+
+.section-container{
+        @apply max-w-screen-2xl container mx-auto py-20 px-5;
+}
