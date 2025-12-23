@@ -27,7 +27,7 @@ const NavItems = () => {
           {item.dropdown ? (
             <details>
               <summary>{item.name}</summary>
-              <ul className="p-2 bg-base-100 w-40 ">
+              <ul className="p-2 bg-base-100 w-40  z-50">
                 {item.children.map((child, i) => (
                   <li key={i}>
                     <NavLink to={child.path}>{child.name}</NavLink>
