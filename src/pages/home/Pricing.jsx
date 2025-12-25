@@ -110,7 +110,7 @@ const Pricing = () => {
                 <ul>
                     {
                         plan.features.map((feature, index)=>(
-                            <li key={index} className="flex items-center gap-5 mb-2">
+                            <li key={index} className="flex items-center gap-5 mb-2 pl-8">
                                 <TiTick />{feature}
                             </li>
                         ))
