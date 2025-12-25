@@ -82,7 +82,8 @@ const reviews =[
 
 const Testimonial = () => {
   return (
-    <div className="section-container bg-colorBg">
+   <div className="bg-colorBg">
+     <div className="section-container">
       <HeadingSection
         subheading="Testimonials"
         heading="What Our Clients Says"
@@ -129,6 +130,7 @@ const Testimonial = () => {
 
       </Swiper>
     </div>
+   </div>
   );
 };
 
