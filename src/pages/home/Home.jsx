@@ -7,6 +7,7 @@ import Testimonial from './Testimonial';
 import Blogs from '../blog/Blogs';
 import TeamSection from './TeamSection';
 import Pricing from './Pricing';
+import FAQ from './FAQ';
 
 const Home = () => {
     return (
@@ -19,6 +20,7 @@ const Home = () => {
             <Blogs/>
             <TeamSection/>
             <Pricing/>
+            <FAQ/>
         </div>
     );
 };
