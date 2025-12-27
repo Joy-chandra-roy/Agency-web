@@ -23,7 +23,7 @@ const Hero = () => {
           </p>
 
           <NavLink
-            to="/"
+            to="/contact"
             className="btn btn-primary px-8 hover:bg-violet-800 duration-300 text-white font-semibold text-xl  "
           >
             Get start
