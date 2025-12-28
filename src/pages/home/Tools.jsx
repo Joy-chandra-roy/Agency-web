@@ -31,7 +31,9 @@ const Tools = () => {
         <div className='section-container'>
 
 
-            <HeadingSection subheading="The tools you need" heading="All-in-One Solution for Your Projects"/>
+            <h1 className='text-3xl font-bold mb-5'>
+                All-in-One Solution for Your Projects
+            </h1>
 
             {/* render tools here */}
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2'>
