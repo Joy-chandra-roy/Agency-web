@@ -9,6 +9,7 @@ import Contact from "../pages/Contact/Contact";
 import Error from "../components/Error";
 import Pricing from "../pages/home/Pricing";
 import Register from "../components/Register";
+import Login from "../components/Login";
 
 const router = createBrowserRouter([
   {
@@ -59,7 +60,7 @@ const router = createBrowserRouter([
 },
 {
     path:"/login",
-    element:<div>Login page</div>
+    element:<Login/>
 }
 ]);
 
