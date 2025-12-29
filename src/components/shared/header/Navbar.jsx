@@ -44,13 +44,13 @@ const Navbar = () => {
         </div>
         <div className="navbar-end gap-3">
           <NavLink
-            to="/"
+            to="/login"
             className="btn btn-outline btn-primary px-8 hidden sm:flex"
           >
             Login
           </NavLink>
 
-          <NavLink to="/" className="btn btn-primary  ">
+          <NavLink to="/pricing" className="btn btn-primary  ">
             Free trial
           </NavLink>
         </div>
